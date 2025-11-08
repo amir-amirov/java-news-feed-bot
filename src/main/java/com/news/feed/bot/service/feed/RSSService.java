@@ -3,7 +3,6 @@ package com.news.feed.bot.service.feed;
 import com.news.feed.bot.exception.InvalidFetchedArticleException;
 import com.news.feed.bot.model.Article;
 import com.news.feed.bot.util.Utils;
-import com.rometools.rome.feed.atom.Feed;
 import com.rometools.rome.feed.synd.SyndContent;
 import com.rometools.rome.feed.synd.SyndEntry;
 import com.rometools.rome.feed.synd.SyndFeed;
@@ -11,7 +10,6 @@ import com.rometools.rome.io.FeedException;
 import com.rometools.rome.io.SyndFeedInput;
 import com.rometools.rome.io.XmlReader;
 import lombok.extern.slf4j.Slf4j;
-import org.jsoup.Jsoup;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
