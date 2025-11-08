@@ -35,7 +35,7 @@ public class FetcherServiceImpl implements FetcherService {
         List<Source> sources = sourceService.getAll();
 
         for (Source source : sources) {
-            List<Article> articles = feedService.getFeed(source.getFeed_url());
+            List<Article> articles = feedService.getFeed(source.getFeedUrl());
             for (Article article : articles) {
                 articleService.create(article);
             }
