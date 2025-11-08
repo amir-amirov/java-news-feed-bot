@@ -1,6 +1,6 @@
 # Go News Feed Bot
 
-The project is written in **Java**. It consists of two workers: **Fetcher** and **Publisher**. The first one fetches news articles from **RSS feeds** and stores them in a **PostgreSQL** database. The second one delivers articles to users posting them in the Telegram channel ([@javanewsfrombot](https://t.me/javanewsfrombot)). This is done by connecting to Telegram bot which is an admin in the channel. Apart from that, before posting the article is summarized using **OpenAI API**. The project follows SOLID principles and uses dependency injection for maintainability and testability. It is containerized using Docker and Docker Compose for easy deployment. An instance of **AWS EC2** was created to host the project.
+The project is written in **Java**. It consists of two workers: **Fetcher** and **Publisher**. The first one fetches news articles from **RSS feeds** and stores them in a **PostgreSQL** database. The second one delivers articles to users posting them in the Telegram channel ([@javanewsfrombot](https://t.me/javanewsfrombot)). This is done by connecting to Telegram bot which is an admin in the channel. Apart from that, before posting the article is summarized using **OpenAI API**. It is containerized using Docker and Docker Compose for easy deployment. An instance of **AWS EC2** was created to host the project.
 
 ## Tech Stack
 
