@@ -1,6 +1,6 @@
 # Java News Feed Bot
 
-The project is written in **Java**. It consists of two workers: **Fetcher** and **Publisher**. The first one fetches news articles from **RSS feeds** and stores them in a **PostgreSQL** database. The second one delivers articles to users posting them in the Telegram channel ([@javanewsfrombot](https://t.me/javanewsfrombot)). This is done by connecting to Telegram bot which is an admin in the channel. Apart from that, before posting the article is summarized using **OpenAI API**. It is containerized using Docker and Docker Compose for easy deployment. An instance of **AWS EC2** was created to host the project.
+The project is written in **Java**. It consists of two workers: **Fetcher** and **Publisher**. The first one fetches news articles from **RSS feeds** and stores them in a **PostgreSQL** database. The second one delivers articles to users posting them in the Telegram channel ([@javanewsfrombot](https://t.me/javanewsfrombot)). This is done by connecting to Telegram bot which is an admin in the channel. Apart from that, before posting the article is summarized using **OpenAI API**. It is containerized using Docker and Docker Compose for easy deployment. An instance of VPS in **Google Cloud** was created to host the project.
 
 ## Tech Stack
 
@@ -11,7 +11,7 @@ The project is written in **Java**. It consists of two workers: **Fetcher** and 
 - Telegram Bot API (for the bot admin of the Telegram channel)
 - OpenAI API (for generating article summaries with `gpt-4o-mini`)
 - RSS feeds
-- AWS EC2 instance for hosting
+- Google Cloud for hosting
 
 ## Architecture
 

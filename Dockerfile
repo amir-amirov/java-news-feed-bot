@@ -7,5 +7,5 @@ RUN ./gradlew build -x test
 
 FROM amazoncorretto:17-alpine
 WORKDIR /app
-COPY --from=build /app/build/libs/*.jar *.jar
+COPY --from=build /app/build/libs/*-SNAPSHOT.jar *.jar
 ENTRYPOINT ["java", "-jar", "*.jar"]
