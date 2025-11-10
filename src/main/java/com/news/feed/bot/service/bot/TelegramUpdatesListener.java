@@ -85,7 +85,7 @@ public class TelegramUpdatesListener {
             Step newStep = new Step();
             newStep.setState(StepState.WAITING_REMOVE_SOURCE_URL);
             flow.put(chatID, newStep);
-            reply.append("Send *source name*\\:");
+            reply.append("Send *source URL*\\:");
             return reply.toString();
         }
 
