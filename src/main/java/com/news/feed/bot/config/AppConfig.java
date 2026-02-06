@@ -10,11 +10,6 @@ import org.springframework.web.reactive.function.client.WebClient;
 public class AppConfig {
 
     @Bean
-    public WebClient webClient() {
-        return WebClient.create();
-    }
-
-    @Bean
     public TelegramBot telegramBot(@Value("${telegram.bot.token}") String token) {
         return new TelegramBot(token);
     }
